@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login page style.css"></link>
+</head>
+<body>
+
+<div class="wrap">
+
+  <div class="brand">
+    <div class="brand-mark"></div>
+    <h1>Studio Account</h1>
+  </div>
+
+  <div class="card">
+
+    <div class="tabs" id="tabs">
+      <div class="slider"></div>
+      <button type="button" class="active" data-tab="login">Log in</button>
+      <button type="button" data-tab="signup">Sign up</button>
+    </div>
+
+    <!-- LOGIN -->
+    <div class="panel active" id="panel-login">
+      <div style="width:100%">
+        <h2>Welcome back</h2>
+        <p class="subtitle">Log in to pick up where you left off.</p>
+
+        <form id="form-login" novalidate>
+          <div class="field">
+            <label for="login-email">Email</label>
+            <input type="email" id="login-email" placeholder="you@example.com" required>
+          </div>
+          <div class="field">
+            <label for="login-password">Password</label>
+            <input type="password" id="login-password" placeholder="••••••••" required>
+          </div>
+          <div class="row-between">
+            <label class="remember">
+              <input type="checkbox"> Stay logged in
+            </label>
+            <a href="#" class="link">Forgot password?</a>
+          </div>
+          <div class="error" id="login-error"></div>
+          <button type="submit" class="btn-primary">Log in</button>
+        </form>
+
+        <div class="divider">OR</div>
+
+        <button type="button" class="btn-secondary">Continue with Google</button>
+
+        <p class="foot">New here? <a href="#" class="link" data-switch="signup">Create an account</a></p>
+      </div>
+    </div>
+
+    <!-- SIGNUP -->
+    <div class="panel" id="panel-signup">
+      <div style="width:100%">
+        <h2>Create your account</h2>
+        <p class="subtitle">Takes less than a minute to get started.</p>
+
+        <form id="form-signup" novalidate>
+          <div class="field">
+            <label for="signup-name">Full name</label>
+            <input type="text" id="signup-name" placeholder="Jordan Lee" required>
+          </div>
+          <div class="field">
+            <label for="signup-email">Email</label>
+            <input type="email" id="signup-email" placeholder="you@example.com" required>
+          </div>
+          <div class="field">
+            <label for="signup-password">Password</label>
+            <input type="password" id="signup-password" placeholder="At least 8 characters" required minlength="8">
+          </div>
+          <div class="error" id="signup-error"></div>
+          <button type="submit" class="btn-primary">Create account</button>
+        </form>
+
+        <div class="divider">OR</div>
+
+        <button type="button" class="btn-secondary">Continue with Google</button>
+
+        <p class="foot">Already have an account? <a href="#" class="link" data-switch="login">Log in</a></p>
+      </div>
+    </div>
+
+  </div>
+</div>
+<script src="login page script.js"></script>
+</body>
+</html>
